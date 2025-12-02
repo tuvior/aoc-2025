@@ -1,7 +1,7 @@
 use std::env;
 
-use aoc_2025::run_day;
 use aoc_2025::days;
+use aoc_2025::run_day;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -18,6 +18,7 @@ fn main() {
 
     match day {
         1 => run_day::<days::day01::Day01>(part),
+        2 => run_day::<days::day02::Day02>(part),
         _ => {
             eprintln!("Day {day} not implemented yet");
             std::process::exit(1);
