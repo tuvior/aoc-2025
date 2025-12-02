@@ -15,41 +15,41 @@ Each day follows a shared interface (`Day` trait) and a consistent file structur
 
 Run a day:
 
-    cargo run -- <day>
-
-Example:
-
-    cargo run -- 1
+```bash
+cargo run -- <day>
+```
 
 Run a specific part:
 
-    cargo run -- <day> <part>
-
-Example:
-
-    cargo run -- 1 2
+```bash
+cargo run -- <day> <part>
+```
 
 Run all tests:
 
-    cargo test
+```bash
+cargo test
+```
 
 ---
 
 ## 📁 Project Structure
 
-    aoc-2025/
-      inputs/
-        day01.txt
-        day02.txt
-        ...
-      src/
-        main.rs
-        lib.rs        // Day trait + generic runner
-        days/
-          mod.rs
-          day01.rs
-          day02.rs
-          ...
+```tree
+aoc-2025/
+├── inputs/
+│   ├── day01.txt
+│   ├── day02.txt
+│   └── ...
+├── src/
+│   ├── main.rs
+│   ├── lib.rs        # Day trait + generic runner
+│   └── days/
+│       ├── mod.rs
+│       ├── day01.rs
+│       ├── day02.rs
+│       └── ...
+```
 
 - `lib.rs`: defines the `Day` trait and shared utilities  
 - `main.rs`: command-line entrypoint  
