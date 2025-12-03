@@ -29,22 +29,18 @@ impl Day for Day03 {
             let mut biggest = 0;
             let mut index = 0;
 
-            for i in 0..bank_size - 1 {
-                let bat = bank[i];
-
-                if bat > biggest {
+            for (i, bat) in bank.iter().enumerate().take(bank_size - 1) {
+                if *bat > biggest {
                     index = i;
-                    biggest = bat;
+                    biggest = *bat;
                 }
             }
 
             let mut second_biggest = 0;
 
-            for i in index + 1..bank_size {
-                let bat = bank[i];
-
-                if bat > second_biggest {
-                    second_biggest = bat;
+            for bat in bank.iter().take(bank_size).skip(index + 1) {
+                if *bat > second_biggest {
+                    second_biggest = *bat;
                 }
             }
 
@@ -68,12 +64,15 @@ impl Day for Day03 {
                 let mut biggest = 0;
                 let mut index = cut;
 
-                for i in cut..=bank_size - pow {
-                    let bat = bank[i];
-
-                    if bat > biggest {
+                for (i, bat) in bank
+                    .iter()
+                    .enumerate()
+                    .take((bank_size - pow) + 1)
+                    .skip(cut)
+                {
+                    if *bat > biggest {
                         index = i;
-                        biggest = bat;
+                        biggest = *bat;
                     }
                 }
 

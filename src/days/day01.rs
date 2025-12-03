@@ -59,10 +59,8 @@ impl Day for Day01 {
             position += remaining;
 
             // No extra clicks if we are at 0
-            if start != 0 {
-                if position <= 0 || position >= MOD {
-                    count += 1;
-                }
+            if start != 0 && (position <= 0 || position >= MOD) {
+                count += 1;
             }
 
             position = position.rem_euclid(MOD);
