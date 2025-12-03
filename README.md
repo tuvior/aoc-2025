@@ -1,7 +1,7 @@
 # Advent of Code 2025 — Rust
 
 [![Rust](https://img.shields.io/badge/Rust-orange?logo=rust&logoColor=white)](https://www.rust-lang.org)
-[![Stars](https://img.shields.io/badge/AoC%20Stars-★%204/24-green)](https://adventofcode.com/2025)
+[![Stars](https://img.shields.io/badge/AoC%20Stars-★%206/24-green)](https://adventofcode.com/2025)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A collection of my solutions to **Advent of Code 2025**, written in **Rust**.  
@@ -79,7 +79,7 @@ aoc-2025/
 |-----|--------|--------|--------|
 | 01  | ⭐      | ⭐      |        |
 | 02  | ⭐      | ⭐      |        |
-| 03  | ❌      | ❌      |        |
+| 03  | ⭐      | ⭐      |        |
 | 04  | ❌      | ❌      |        |
 | 05  | ❌      | ❌      |        |
 | 06  | ❌      | ❌      |        |
