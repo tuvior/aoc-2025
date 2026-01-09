@@ -25,6 +25,7 @@ fn main() {
         6 => run_day::<days::day06::Day06>(part),
         7 => run_day::<days::day07::Day07>(part),
         8 => run_day::<days::day08::Day08>(part),
+        9 => run_day::<days::day09::Day09>(part),
         _ => {
             eprintln!("Day {day} not implemented yet");
             std::process::exit(1);
